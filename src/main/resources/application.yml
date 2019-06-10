@@ -1,0 +1,19 @@
+server:
+  port: 8079
+  tomcat:
+    uri-encoding: UTF-8
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    dmysql:
+      type: com.alibaba.druid.pool.DruidDataSource
+      driverClassName: com.mysql.jdbc.Driver
+      jdbcUrl: jdbc:mysql://localhost:3306/jjwplat?useUnicode=true&characterEncoding=UTF-8&useSSL=true
+      username: root
+      password: root
+    dsqlserver:
+      type: com.alibaba.druid.pool.DruidDataSource
+      driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+      jdbcUrl: jdbc:sqlserver://localhost:49508;Databasename=vip
+      username: root
+      password: root
